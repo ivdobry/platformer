@@ -31,9 +31,9 @@ function Player:draw()
 end
 
 function Player:keyPressed(key)
-    playerPosition = (self.x + self.width / 2) - 5
+    playerXPosition = (self.x + self.width / 2) - 5
 
     if key == "space" then
-        table.insert(listOfBullets, Bullet(playerPosition, self.y))
+        table.insert(listOfBullets, Bullet(playerXPosition, self.y))
     end
 end
